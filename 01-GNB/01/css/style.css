@@ -50,12 +50,13 @@ header nav {
 
 .submenu {
   position: absolute;
-  top: 48px;
+  top: 43px;
   left: 0;
   width: 100%;
 
   /* jQuert로 동작을 만들기 위한 준비. op0이 아닌 dn으로 주어야 함 */
   display: none;
+  padding-top: 30px;
 }
 
 .submenu li a {
@@ -65,6 +66,11 @@ header nav {
   text-align: center;
   background: #333;
   color: #fff;
+}
+
+/* 활성화된 메뉴 디자인 */
+.gnb > li.on {
+  background: skyblue;
 }
 
 .inner {
