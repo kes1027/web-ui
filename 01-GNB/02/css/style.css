@@ -54,7 +54,7 @@ header nav {
   left: 0;
   width: 100%;
 
-  /* jQuery로 동작을 만들기 위한 준비. op0이 아닌 dn으로 주어야 함 */
+  /* jQuert로 동작을 만들기 위한 준비. op0이 아닌 dn으로 주어야 함 */
   display: none;
   padding-top: 30px;
 }
