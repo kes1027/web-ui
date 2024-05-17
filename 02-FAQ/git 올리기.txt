@@ -1,3 +1,9 @@
 git add .
-git commit -m "기본형 스크립트 완성"
+git commit -m "not()메서드 사용"
 git push -u origin main
+
+git log
+
+shift+q
+
+git show log
