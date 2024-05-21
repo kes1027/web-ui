@@ -1,5 +1,5 @@
 git add .
-git commit -m "not()메서드 사용"
+git commit -m "siblings() 메서드 사용"
 git push -u origin main
 
 git log
