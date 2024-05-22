@@ -102,10 +102,4 @@ body {
   padding: 50px;
 
   cursor: pointer; /* cup */
-  background: #fff;
-  width: 350px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
