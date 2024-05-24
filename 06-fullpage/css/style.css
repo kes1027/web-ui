@@ -22,6 +22,11 @@ a:hover {
   color: inherit;
 }
 
+/* 스크롤 없애기 */
+body {
+  overflow: hidden;
+}
+
 #header {
   position: fixed;
   top: 0;
