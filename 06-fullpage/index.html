@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fullpage.js처럼 구성해보기</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- .indicator>button*4>b{section$} -->
+  <div class="indicator">
+    <button type="button"><b>section1</b></button>
+    <button type="button"><b>section2</b></button>
+    <button type="button"><b>section3</b></button>
+    <button type="button"><b>section4</b></button>
+  </div>
+
+  <!-- header#header+main#container+footer#footer -->
+  <header id="header">
+    <div class="inner">
+      <nav>
+        <!-- h1.logo+ul.gnb>li*4>a{menu} -->
+        <h1 class="logo">LOGO</h1>
+        <ul class="gnb">
+          <li><a href="#">menu1</a></li>
+          <li><a href="#">menu2</a></li>
+          <li><a href="#">menu3</a></li>
+          <li><a href="#">menu4</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="container">
+    <!-- section.section$*4>h2+p -->
+    <section class="section1">
+      <h2>section1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur perferendis illum rerum atque magni
+        iure. Magnam laborum quam voluptates repellat amet magni eveniet, quibusdam tempore vitae nobis ad corporis non,
+        a deleniti. Iste, non eligendi fugiat vitae quod quos alias error eos ratione iusto necessitatibus veniam velit
+        vero esse molestias suscipit distinctio neque similique accusantium quibusdam? Sequi est quibusdam eos maiores
+        reiciendis error facilis sed fuga nostrum officiis, ipsum sunt repellat alias ab molestiae blanditiis recusandae
+        similique mollitia distinctio, nam veritatis excepturi voluptatibus. Placeat at, veniam eligendi maxime ad
+        suscipit illo fuga exercitationem ipsam dolores quos dolorem, nisi neque.</p>
+    </section>
+
+    <section class="section2">
+      <h2>section2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam officia velit, dignissimos perspiciatis
+        aspernatur nostrum consectetur ullam sit autem laudantium expedita placeat quae. Numquam recusandae iure unde
+        quos ex non expedita? Quibusdam minus, incidunt distinctio doloribus sit quia, id perspiciatis nostrum, esse
+        minima error. Neque ad nobis magni aut aliquid?</p>
+    </section>
+
+    <section class="section3">
+      <h2>section3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, debitis voluptatum eius quis facere eveniet
+        impedit eaque, doloremque quae maxime, deleniti suscipit reiciendis. Nemo accusantium fugit repellendus
+        doloremque inventore sapiente modi, distinctio tempore nostrum molestiae accusamus amet voluptatibus odio
+        tenetur dolorem laborum mollitia. Consectetur veritatis porro, amet, officia vitae, iste nobis nesciunt tenetur
+        nostrum pariatur earum repellendus ipsam! Error, atque quasi ipsum libero distinctio omnis similique? Magnam
+        nesciunt ab eius dolores illo? Numquam odio sequi aut velit placeat voluptate? Error?</p>
+    </section>
+
+    <section class="section4">
+      <h2>section4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sapiente, aspernatur debitis adipisci vero illo
+        amet sequi earum, rem temporibus necessitatibus corporis omnis eligendi dignissimos quae voluptas perferendis
+        optio. Perferendis veniam rem ex in corporis quo cum delectus fugiat perspiciatis provident assumenda eligendi,
+        rerum deleniti labore dolor officia aperiam autem a vel sapiente laboriosam eos suscipit et! Tempore a eum
+        corrupti in nihil, consequuntur magni autem, mollitia quaerat ab pariatur.</p>
+    </section>
+  </main>
+
+  <footer id="footer">잘 살아보세!</footer>
+
+  <button type="button" class="btn-top">TOP</button>
+</body>
+
+</html>
