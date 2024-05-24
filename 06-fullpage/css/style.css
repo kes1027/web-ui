@@ -124,6 +124,7 @@ main > section.section4 {
   background: #fff;
   transition: 0.3s;
   cursor: pointer;
+  outline: none; /* outline 없애는 것 */
 }
 .indicator button.on {
   width: 60px;
