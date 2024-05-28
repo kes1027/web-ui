@@ -16,10 +16,11 @@
     body {
       width: 100%;
       height: 100vh;
-      overflow: hidden;
     }
 
     .obj-wrap {
+      overflow: hidden;
+
       width: 100%;
       height: 100%;
       background: rgb(255, 255, 213);
@@ -63,6 +64,12 @@
       height: 400px;
       background: green;
     }
+
+    .scroll-area {
+      border: 10px solid #eee;
+      padding: 5vw;
+      min-height: 200vh;
+    }
   </style>
 
   <script src="./js/jquery-3.3.1.min.js"></script>
@@ -88,12 +95,17 @@
       const speed = 0.009;
 
       // 마우스가 움직이면 좌표의 시작점을 화면의 정주항으로 세팅
-      $window.on('mousemove', function (e) {
-        x = e.pageX - $window.outerWidth() / 2;
-        y = e.pageY - $window.outerHeight() / 2;
-      });
+      // 1. 함수로 정의
+      function getOffset() {
 
-      // 움직임 구현
+
+        $window.on('mousemove', function (e) {
+          x = e.pageX - $window.outerWidth() / 2;
+          y = e.pageY - $window.outerHeight() / 2;
+        });
+      }
+
+      // 2. 움직임 구현
       function moving() {
 
         // 조정된 값 구하기
@@ -119,8 +131,19 @@
         // 부드럽게 반복
         requestAnimationFrame(moving);
       }
-      //움직임 실행
-      moving();
+
+      // 3. 1~2실행하는 함수
+      function initAnimation() {
+        // 좌표값 구하기
+        getOffset();
+
+        //움직임 실행
+        moving();
+      }
+
+      // 함수 실행
+      initAnimation();
+
     });
   </script>
 
@@ -133,6 +156,18 @@
     <div class="obj3"></div>
     <div class="obj4"></div>
   </div>
+
+  <div class="scroll-area">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum ipsam voluptatibus vitae culpa facere similique,
+      deleniti saepe minima odio reprehenderit! Quis rem consequatur nulla repellat, officiis expedita reprehenderit
+      praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nulla incidunt mollitia, commodi,
+      minus velit sapiente repudiandae tenetur minima exercitationem, non veniam in optio maiores. Ducimus alias ipsa
+      modi et. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae deserunt nobis exercitationem voluptatum
+      blanditiis labore animi quis eum id dolores sit corporis neque corrupti, voluptate vitae nemo est, aliquid nam?
+    </p>
+  </div>
 </body>
+
 
 </html>
