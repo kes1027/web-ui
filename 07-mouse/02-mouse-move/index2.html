@@ -12,6 +12,28 @@
       height: 100vh;
     }
 
+    body::before,
+    body::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1px;
+      height: 100%;
+      background: #fff;
+    }
+
+    body::before {
+      width: 1px;
+      height: 100%;
+    }
+
+    body::after {
+      width: 100%;
+      height: 1px;
+    }
+
     h1 {
       color: #fff;
     }
@@ -50,9 +72,10 @@
       // 마우스가 움직이면 
       $window.on('mousemove', function (e) {
         // 좌표값 가져와서 x, y 변수에 할당
+        // 마우스 좌표의 시작을 화면의 중심으로 이동
         console.log(e);
-        x = e.pageX;
-        y = e.pageY;
+        x = e.pageX - $window.outerWidth() / 2;
+        y = e.pageY - $window.outerHeight() / 2;;
       });
 
       // 마우스 위치 값을 기본으로 해서 어떤 값을 만들자
@@ -63,12 +86,13 @@
 
         // cursor의 좌표값으로 적용
         $cursor.css({
-          left: mx,
-          top: my
+          // left: mx,
+          // top: my
+          transform: `translate(${mx}px, ${my}px)`
         });
 
         // info 창에 정보 뿌리기
-        $info.html(`mx: ${mx}<br>my: ${my}`);
+        $info.html(`x: ${x}<br>y: ${y}`);
 
         // 부드러운 반복 <- 중요
         requestAnimationFrame(moving);
