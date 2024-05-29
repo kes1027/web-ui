@@ -157,7 +157,7 @@
 
         // 스크롤 값이 scroll-area 를 넘어서면 애니메이션 중지
         if (scrollTop >= targetPos) cancelAnimationFrame(raf);
-        // 다시 상단으로 이동하면 움직임 실행
+        // 다시 상단으로 이동하면 움직임 실행.
         if (scrollTop === 0) initAnimation();
       })
     });
