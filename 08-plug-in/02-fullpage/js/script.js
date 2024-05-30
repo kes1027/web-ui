@@ -27,7 +27,7 @@ $(function () {
     anchors: ['section1', 'section2', 'section3', 'section4'],
 
     // 3. 실제 링크에 data-menuanchor="영역이름" 적용
-    //* 속도 조절
+    //* 속도 조절하기
     scrollingSpeed: 1000,
 
     // * 섹션 영역의 콘텐츠 세로 정렬
